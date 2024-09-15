@@ -54,27 +54,29 @@ users[1].email
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn')); // check if obj has the following property
 
-
+    // ============ Object de-structure and JSON API intro =======
 const course = {
-    coursename: "js in hindi",
+    coursename: "js in hindi-Youtube",
     price: "999",
     courseInstructor: "aryan"
 }
 
-// course.courseInstructor
-
-const {courseInstructor: instructor} = course
+// course.courseInstructor            // baar baar course.courseInstructor kon likhega, isko destructure karo
+const {courseInstructor: instructor} = course    // rename kar diya (destructure)
 
 // console.log(courseInstructor);
 console.log(instructor);
 
+
+      // ========API is in JSON (pehle XML hota tha)==========
+      // API (objects / array of objects)
 // {
-//     "name": "hitesh",
+//     "name": "aryan",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
 
-[
+[                 // this is also JSON, array of objects
     {},
     {},
     {}
